@@ -1,0 +1,36 @@
+.contr{
+  display: flex;
+  justify-content: center;
+  /* down part add in fp */
+  padding:20px;
+  background:rgba(0, 0, 0, 0.87);
+}
+ /* add .fp here*/ .inp{ 
+    margin: 10px;
+  }
+ 
+  .inp p{
+    font-size: 20px;
+    color: white;
+  }
+  .inp input{
+    font-size: 18px;
+    height:5vh;
+   width: 70vh;
+    background-color:#80808099;
+  }
+  .inp .messagex{
+    height:25vh;
+  }
+  .btsolid{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    width: 70vh;
+    padding: 5px;
+    border: 1px solid aqua;
+    background: #35d70dde;
+}
+/* .fp write here remove contr*/ .contr form{ 
+  padding: 10px; 
+}

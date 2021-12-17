@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photostoc</title>
+    <link rel="stylesheet" href="css1/btnmix.css">
+    <link rel="stylesheet" href="css1/imgmix.css">
+    <link rel="stylesheet" href="css2/contactus.css">
+     <link rel="stylesheet" href="css1/navbarmix2.css">
+</head>
+
+<body>
+     <!-- navbar -->
+
+     <nav class="navbar">
+       <div class="brand-title">Photostoc</div>
+        <button type="button" class="collap">☰ </button>
+        <div class="navbar-links ">
+            <ul>
+                <li><a href="#contactus">contact.us </a></li>
+               <li><a class="logbut" href="Logout.php">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- images -->
+    <div class="container">
+        <div class="image-container">
+
+            <div class="ino"><img src="image gallery/kkk.jpg"></div>
+            <div class="ino"><img src="image gallery/kkkk.jpg"></div>
+            <div class="ino"><img src="image gallery/mmmm.jpg"></div>
+            <div class="ino"><img src="image gallery/h.jpg"></div>
+            <div class="ino"><img src="image gallery/l.jpg"></div>
+
+            <div class="ino"><img src="image gallery/ll.jpg"></div>
+            <div class="ino"><img src="image gallery/lll.jpg"></div>
+            <div class="ino"><img src="image gallery/llll.jpg"></div>
+            <div class="ino"><img src="image gallery/lllll.jpg"></div>
+            <div class="ino"><img src="image gallery/n.jpg"></div>
+            <div class="ino"><img src="image gallery/nn.jpg"></div>
+
+
+            <div class="ino"><img src="image gallery/m.jpg"></div>
+            <div class="ino"><img src="image gallery/mm.jpg"></div>
+            <div class="ino"><img src="image gallery/mmm.jpg"></div>
+
+            <div class="ino"><img src="image gallery/mmmmm.jpg"></div>
+
+
+        </div>
+        <br>
+
+        <hr><br>
+
+        <!-- multipage btn -->
+        <div class="Divv" id="divv">
+            <button class="btn active"><a href="1.html">1</a></button>
+            <button class="btn "><a href="2.html">2</a></button>
+            <button class="btn"><a href="3.html">3</a></button>
+            <button class="btn"><a href="4.html">4</a></button>
+            <button class="btn"><a href="5.html">5</a></button>
+            <button class="btn"><a href="6.html">6</a></button>
+        </div>
+        <br>
+        <hr>
+
+        <!-- images span -->
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="image gallery/bb.jpg">
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="contactus">
+    <div class="contr">
+<!--add here new div fp when you use fp div-->
+  <form action="" method="POST" class="contu">
+    <div class="inp">
+    <p>Name</p>
+        <input type="text"  name="name"  required> 
+      </div>   
+      <div class="inp">
+     <p>Email*</p>
+        <input type="text"  name="email"  required> 
+       </div>
+       <div class="inp">
+     <p>Message*</p>
+        <input type="text"  class="messagex" name="message"  required> 
+      </div>
+      <div class="inp">
+         <button name="submit" value="Submit" class="btsolid"> Send </button>                
+         </div>
+    </form>
+
+  </div>
+      <!--
+  <p>copyright@2021 photostoc</p>
+  -->
+    </footer>
+
+    <!-- script -->
+    <script>
+        document.querySelectorAll('.image-container img').forEach(ino => {
+            ino.onclick = () => {
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = ino.getAttribute('src');
+            }
+        });
+        document.querySelector('.popup-image span').onclick = () => {
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+
+
+           var coll = document.getElementsByClassName(" collap");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+
+
+    </script>
+
+</body>
+
+
+
+
+
+</html>

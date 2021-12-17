@@ -1,0 +1,45 @@
+
+
+.Divv {background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+}
+
+.btn {
+    border: 1px solid rgb(15, 238, 227);
+    background: none;
+    outline: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.btn a:hover { 
+    padding: 10px 15px;
+    background-color: rgb(4, 217, 245);
+    color:black;
+    font-size: 20px;
+    transition: .3s ;}
+    
+
+
+div button a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(15, 238, 227);
+}
+
+a{ padding: 10px;
+}
+.btn{
+  margin:3px;
+}
+
+@media(max-width:770px){
+    .Divv .btn{background: none;
+ }
+ }

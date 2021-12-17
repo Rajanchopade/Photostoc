@@ -1,0 +1,44 @@
+body{
+    background-color:black;
+}
+
+.ino img{
+border: 1px solid rgb(35, 110, 35);
+    position:absolute;
+    display:flex;
+    left:600px;
+    top:100px;
+    width:350px;
+    height:400px;
+    box-shadow: rgba(255, 255, 0, 0.671) 0px 0px 10px 0px;
+}
+.inoo img{ 
+    left:980px;
+    top:250px;
+   }
+
+.home pre{
+   position: absolute;
+    top: 187px;
+    left: 66px;
+    color:white;
+    font-size:30px;
+font-weight:bolder;
+}
+
+.home a{
+    color:black;
+    font-size: 19px;
+    background: rgba(14, 163, 143, 0.815);
+    border-radius: 50px;
+    position: absolute;
+    top: 44%;
+    text-decoration: none;
+    left: 270px;
+    border: 3px solid rgb(19, 141, 15);
+    padding: 11px;
+    box-shadow: rgb(19, 141, 15) 0px 0px 15px 0px;
+}
+.home a:hover{
+    color: white;
+}

@@ -1,0 +1,124 @@
+
+* {
+    margin: 0%;
+    padding: 0;
+}
+ 
+   /* navbar */
+
+   .navbar {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.616);
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    margin-left: 20vh;
+    color: rgba(21, 214, 205, 0.925);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* .navbar-links {
+    display: none;
+} */
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    
+    list-style: none;
+}
+
+.navbar-links li a {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li a:hover { 
+    /* background-color: rgb(11, 12, 11); */
+    color: rgb(50, 206, 206);
+}
+
+
+
+/*toggle button */
+.collap {
+    cursor: pointer;
+    padding: 4px;
+    background: transparent;
+    color: black;
+    border: none;
+    display: block;
+    position: fixed;
+    z-index: 10000;
+    font-size: 32px;
+    display: flex;
+    
+}
+
+.collap:hover {
+    background-color: rgb(11, 12, 11);
+    color: rgb(19, 226, 226);
+}
+  /* mobile section */
+  @media (max-width:700px) {
+    .navbar-links {
+        display: none;
+    } 
+.navbar{
+    height:50px;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+    .brand-title {
+        margin-left: 8%;
+    }
+
+    .navbar-links {
+            padding-top: 73px;
+            min-height: 100vh;
+            background-color: rgba(0, 0, 0, 0.616);
+            width: 32%;
+        
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction:column;
+    
+    }
+
+    .navbar-links li {
+        text-align: center;
+        padding:5px;
+        border-bottom: 2px solid white;
+    }
+
+    .navbar-links li a {
+        font-weight: bolder;
+        font-size:18px;
+        padding: .5rem 1rem;
+    }
+    .navbar-links li a:hover {
+       color: rgb(19, 230, 166);
+    }
+  
+}
+
